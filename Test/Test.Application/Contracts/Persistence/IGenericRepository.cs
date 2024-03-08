@@ -13,5 +13,8 @@ namespace Test.Application.Contracts.Persistence
         Task<List<T>> GetListAsync(Expression<Func<T, bool>> filter, int? from = null, int? to = null);
 
         Task<T> GetAsync(int id);
+
+        Task<bool> IsExist(int id);
+
     }
 }
