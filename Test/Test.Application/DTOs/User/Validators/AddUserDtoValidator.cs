@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Application.DTOs.User.Validators
 {
-    internal class AddUserDtoValidator
+    public class AddUserDtoValidator
     {
     }
 }

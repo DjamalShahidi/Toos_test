@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Application
 {
-    internal class ApplicationServicesRegisteration
+    public class ApplicationServicesRegisteration
     {
     }
 }

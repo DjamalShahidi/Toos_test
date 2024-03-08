@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Application.DTOs.User
 {
-    internal class AddUserDto
+    public class AddUserDto
     {
     }
 }

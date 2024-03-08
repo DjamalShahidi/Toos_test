@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Persistence.Configurations.Entities
 {
-    internal class UserConfiguration
+    public class UserConfiguration
     {
     }
 }

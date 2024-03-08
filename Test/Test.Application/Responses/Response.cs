@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Application.Responses
 {
-    internal class Response
+    public class Response
     {
     }
 }

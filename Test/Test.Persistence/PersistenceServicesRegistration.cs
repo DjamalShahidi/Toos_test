@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Persistence
 {
-    internal class PersistenceServicesRegistration
+    public class PersistenceServicesRegistration
     {
     }
 }

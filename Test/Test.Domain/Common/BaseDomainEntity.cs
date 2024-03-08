@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Domain.Common
 {
-    internal class BaseDomainEntity
+    public class BaseDomainEntity
     {
     }
 }

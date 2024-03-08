@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Persistence.Repositories
 {
-    internal class UserRepository
+    public class UserRepository
     {
     }
 }

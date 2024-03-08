@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Application.Profiles
 {
-    internal class MappingProfile
+    public class MappingProfile
     {
     }
 }

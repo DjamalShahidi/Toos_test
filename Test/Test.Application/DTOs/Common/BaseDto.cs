@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Application.DTOs.Common
 {
-    internal class BaseDto
+    public class BaseDto
     {
     }
 }

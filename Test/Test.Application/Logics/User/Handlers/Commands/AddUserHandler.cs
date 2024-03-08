@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Application.Logics.User.Handlers.Commands
 {
-    internal class AddUserHandler
+    public class AddUserHandler
     {
     }
 }

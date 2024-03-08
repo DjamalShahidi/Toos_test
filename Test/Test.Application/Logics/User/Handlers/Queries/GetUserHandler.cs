@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Application.Logics.User.Handlers.Queries
 {
-    internal class GetUserHandler
+    public class GetUserHandler
     {
     }
 }

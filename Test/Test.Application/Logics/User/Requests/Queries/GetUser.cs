@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Application.Logics.User.Requests.Queries
 {
-    internal class GetUser
+    public class GetUser
     {
     }
 }

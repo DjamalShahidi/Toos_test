@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Application.Contracts.Persistence
 {
-    internal interface IUserRepository
+    public interface IUserRepository
     {
     }
 }

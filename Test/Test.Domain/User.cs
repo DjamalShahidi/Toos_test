@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.Domain
 {
-    internal class User
+    public class User
     {
     }
 }
