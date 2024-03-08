@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Test.Application.Responses
+﻿namespace Test.Application.Responses
 {
     public class Response
     {
+        public bool IsSuccess { get; set; } = true;
+
+        public List<string> ErrorMessages { get; set; } = new List<string>();
+
+        public object Result { get; set; } = null;
     }
 }

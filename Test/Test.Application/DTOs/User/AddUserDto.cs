@@ -8,5 +8,6 @@ namespace Test.Application.DTOs.User
 {
     public class AddUserDto
     {
+
     }
 }

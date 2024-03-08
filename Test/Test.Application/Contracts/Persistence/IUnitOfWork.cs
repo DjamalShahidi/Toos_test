@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore.Storage;
 
 namespace Test.Application.Contracts.Persistence
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork :IDisposable
     {
+        IUserRepository UserRepository { get; }
+
+        IUserDetailRepository UserDetailRepository { get; }
+
+        Task Save(CancellationToken cancellationToken);
+
+        Task<IDbContextTransaction> BeginTransactionAsync(CancellationToken cancellationToken = default);
     }
 }

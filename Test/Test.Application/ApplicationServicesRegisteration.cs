@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace Test.Application
 {
-    public class ApplicationServicesRegisteration
+    public static class ApplicationServicesRegisteration
     {
+        public static IServiceCollection ConfigureApplicationServices(this IServiceCollection services)
+        {
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+
+            return services;
+        }
     }
 }

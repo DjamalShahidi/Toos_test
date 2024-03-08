@@ -2,7 +2,7 @@
 
 namespace Test.Application.Contracts.Persistence
 {
-    public interface IUserRepository : IGenericRepository<User>
+    public interface IUserDetailRepository:IGenericRepository<UserDetail>
     {
     }
 }
