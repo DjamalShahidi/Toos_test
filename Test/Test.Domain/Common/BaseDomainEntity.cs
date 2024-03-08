@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Test.Domain.Common
+﻿namespace Test.Domain.Common
 {
-    public class BaseDomainEntity
+    public abstract class BaseDomainEntity
     {
+        public int Id { get; set; }
+
+        public DateTime CreateDate { get; set; }
     }
 }
