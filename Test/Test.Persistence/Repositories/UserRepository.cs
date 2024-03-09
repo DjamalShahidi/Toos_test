@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
 using Test.Application.Contracts.Persistence;
 
 namespace Test.Persistence.Repositories
@@ -14,6 +10,11 @@ namespace Test.Persistence.Repositories
         public UserRepository(TestDbContext context) : base(context)
         {
             this._context = context;
+        }
+
+        public async Task<bool> IsExistWithCode(int code)
+        {
+            return await _context.Users.AnyAsync(a => a.Code == code);
         }
     }
 }
