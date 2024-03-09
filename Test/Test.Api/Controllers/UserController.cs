@@ -1,5 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Test.Application.DTOs.User;
+using Test.Application.Logics.User.Requests.Commands;
 using Test.Application.Responses;
 
 namespace Test.Api.Controllers
@@ -24,9 +26,9 @@ namespace Test.Api.Controllers
 
 
         [HttpPost]
-        public async Task<Response> AddUser()
+        public async Task<Response> AddUser(AddUserDto addUser)
         {
-            return new Response();
+            return await _mediator.Send(new AddUser() { Request=addUser});
         }
 
         [HttpPut]

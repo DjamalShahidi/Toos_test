@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Test.Application.DTOs.User;
+using Test.Application.DTOs.UserDetail;
 using Test.Domain;
 
 namespace Test.Application.Profiles
@@ -7,8 +9,9 @@ namespace Test.Application.Profiles
     {
         public MappingProfile()
         {
-            //CreateMap<PreInvoiceHeader, AddPreInvoiceHeaderDto>().ReverseMap();
+            CreateMap<AddUserDetailDto, UserDetail>().ForMember(a => a.Type, o => o.MapFrom(src => MapValueType(src.Value))).ReverseMap();
 
+            CreateMap<AddUserDto, User>().ReverseMap();
         }
 
         private UserDetailValueType MapValueType(object value)
@@ -23,10 +26,10 @@ namespace Test.Application.Profiles
             {
                 return UserDetailValueType.Boolean;
             }
-            //else if (date.TryParse(stValue, out _)) DateTime
-            //{
-            //    return UserDetailValueType.Boolean;
-            //}
+            else if (DateTime.TryParse(stValue, out _))
+            {
+                return UserDetailValueType.DateTime;
+            }
             else
             {
                 return UserDetailValueType.String;

@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
+using Test.Application.DTOs.User;
+using Test.Application.Responses;
 
 namespace Test.Application.Logics.User.Requests.Commands
 {
-    public class AddUser
+    public class AddUser:IRequest<Response>
     {
+        public AddUserDto Request { get; set; }
     }
 }
